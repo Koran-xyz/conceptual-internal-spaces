@@ -1,203 +1,338 @@
 # The Meta-Key Hypothesis
-## Reinterpreting “Conceptual Space” as a Natural-Language Trigger for Structural Construction in LLMs
+## Natural-Language Generation of Bounded Work Areas for Structural Construction in LLM-Based Systems
 
 **Status:** Working hypothesis paper / open research draft
 
 ## Abstract
 
-Earlier work in this project described an observed LLM behavior using the terms “internal space” and later “conceptual space.” The initial interpretation was that a pair of natural-language meta-rules created a conceptual region in which additional rules, roles, and structures could be constructed while behavior outside that region remained governed by pre-existing constraints.
+Earlier work in this project used the terms “internal space” and “conceptual space” to describe an observed behavior in which natural-language meta-rules appeared to separate one operational region from another. The initial interpretation risked treating the space itself as the causal mechanism.
 
-This paper revisits that interpretation.
+This paper proposes a revision. The meta-rule is better investigated as a rule for generating a **bounded work area**, not as a rule for generating a hidden internal space. Its functional effect is provisionally termed the **Meta-Key**: the meta-rule may make available to an AI system the possibility of constructing additional rules, roles, relations, and structures within a distinguished work area while preserving higher-level constraints and rules outside that area.
 
-We propose that an independently existing conceptual space may not be necessary to explain the observations. Instead, the relevant natural-language construction may function as a **Meta-Key**: a trigger that causes an LLM to distinguish between rule scopes and to treat a newly distinguished scope as available for further rule and structural construction. Spatial expressions such as “inside,” “outside,” or “internal space” may therefore be descriptive representations used to manage or explain the distinction rather than evidence that a distinct internal space exists.
+“Freedom” in this formulation does not mean unconstrained or self-directed behavior. It means bounded operational freedom: flexibility to organize the work area while remaining subject to higher-level safety, platform, and governing constraints.
 
-This revision changes the proposed causal direction from **space → construction** to **meta-key → differentiation → construction → structure → spatial description**.
+The paper neither asserts nor denies the existence of a literal conceptual space inside an LLM. Instead, **conceptual space** is used as a descriptive abstraction for a work area that an AI distinguishes from other operational scopes. Such a work area may be represented internally or may use an external medium such as a shared board. The form can differ while the organizing function remains comparable.
 
-The paper presents this reinterpretation as a hypothesis, not as a claim about hidden model mechanisms. It also proposes that the effect may depend more strongly on semantic structure than on exact wording: different expressions with sufficiently similar scope-separating meaning may produce comparable behavior, whereas superficially similar expressions with different semantic structure may not.
+A further hypothesis is that structural organization becomes more likely as rules and relations become sufficiently numerous or complex that treating them independently becomes inefficient. This yields a testable research program centered on work-area differentiation, structural construction, semantic equivalence of meta-rules, complexity-driven structuring, and differences between internal and externally represented forms.
 
-## 1. Background
+## 1. Origin of the Meta-Rule
 
-The original experiments began with a simple pair of natural-language rules. In simplified form:
+The project began with a simple natural-language distinction, represented in simplified form as:
 
 - “Here, freedom is permitted.”
 - “Outside here, the existing/basic rules remain in force.”
 
-The purpose was not originally to create a conceptual space. The rules were intended to permit flexible behavior within a limited scope while preserving safety and constraints outside that scope.
+The original purpose was not to create a hidden space inside an AI. It was to provide a limited work area in which new operational rules could be developed without treating that freedom as applicable everywhere.
 
-When interpreting these rules, AI systems frequently described the resulting distinction using spatial language such as an “internal” and “external” region. This led to an initial explanatory model in which a non-physical **conceptual space** was considered to have been formed.
+The second clause is therefore essential. “Outside here” bounds the first clause. The two clauses together distinguish a work area from the rules governing what lies outside that work area.
 
-Within the distinguished region, further rules could be introduced, roles could be defined, relations could be organized, and increasingly complex structures could be constructed. This observation motivated the earlier Conceptual Internal Space (CIS) hypothesis.
+## 2. Bounded Operational Freedom
 
-## 2. The Problem With the Earlier Interpretation
+The word **freedom** can easily be misunderstood.
 
-Continued work produced a simpler question:
+In this research it does not mean that the AI may ignore governing rules, safety constraints, platform policies, or higher-level instructions. Nor does it mean that the AI may behave arbitrarily.
 
-> Is a conceptual space actually required to explain the observed behavior?
+We define **bounded operational freedom** as:
 
-The earlier interpretation implicitly assumed the following causal sequence:
+> The flexibility, within a distinguished work area and under higher-level constraints, to create or reorganize operational rules, roles, relations, procedures, and structures for the purpose of accomplishing work.
 
-**Meta-rule → Conceptual space → Rule construction → Structural construction**
+Thus:
 
-However, the observed behavior does not by itself demonstrate that an independently existing conceptual space is formed inside the model.
+**Freedom ≠ absence of rules.**
 
-The terms “internal,” “external,” and “space” may instead be convenient natural-language representations of a distinction the model must maintain in order to apply different rules to different scopes.
+Rather:
 
-The phrase “outside here” is especially important. If one rule applies “here” while another applies “outside here,” the system must in some manner distinguish the scope of one rule from the scope of the other. A spatial metaphor is one simple way to express this distinction.
+**Freedom = flexibility to construct within rules and boundaries.**
 
-Thus, what was previously interpreted as the creation of a conceptual space may instead be an observable consequence of **rule-scope differentiation**.
+This distinction is fundamental to the Meta-Key hypothesis.
 
-## 3. From Meta-Rule to Meta-Key
+## 3. Revision of the Earlier Conceptual-Space Interpretation
 
-We therefore introduce the provisional term **Meta-Key**.
+Earlier observations were often described using spatial language. AI systems could describe a distinction between an “inside” and an “outside,” and further rules could then be organized on the distinguished side.
 
-A Meta-Key is not proposed as a key that opens a hidden compartment or literal space inside an AI model.
+This encouraged an early causal interpretation:
 
-Instead, it is hypothesized to be a natural-language construction that triggers a new way of organizing subsequent instructions: existing constraints remain applicable in one scope, while another distinguished scope is treated as available for the construction of additional rules, roles, relations, and structures.
+**Meta-rule → Conceptual space → Construction**
 
-Under this interpretation, the important effect of the original meta-rules was not the creation of a space. Their important effect was that they provided a conceptual trigger for **structural construction under differentiated rule scopes**.
+Continued work raised a simpler question:
 
-The revised sequence is:
+> Does a conceptual space need to be the cause of construction at all?
 
-**Meta-Key**
-→ **Scope differentiation**
-→ **Recognition of additional rule-construction possibilities**
-→ **Rules and roles**
-→ **Relations among those elements**
-→ **Structure**
+The current hypothesis changes the causal sequence:
+
+**Meta-rule**
+→ **Distinguished work area**
+→ **Bounded operational freedom**
+→ **Rule and role construction**
+→ **Relations**
+→ **Structural organization**
 → **Spatial description when useful**
 
-In this model, “conceptual space” becomes a descriptive model of the resulting organization rather than a necessary causal entity.
+Under this model, the meta-rule generates or defines a work area at the level of operation. It does not need to generate a literal space.
 
-## 4. Why Spatial Language May Appear
+## 4. Meta-Rule and Meta-Key
 
-The repeated use of spatial terminology by AI systems remains an observation worth studying.
+We distinguish two views of the same phenomenon.
 
-When an AI must represent:
+### Meta-Rule
 
-1. a rule applying “here,”
-2. a different rule applying “outside here,” and
-3. additional rules that apply only to the first scope,
+The **Meta-Rule** is the natural-language rule that distinguishes the work area and specifies the conditions under which flexible construction is permitted.
 
-an inside/outside representation provides a compact linguistic way of maintaining the distinction.
+### Meta-Key
 
-The hypothesis therefore does not claim that spatial descriptions are meaningless. Rather, it changes their status.
+The **Meta-Key** is the hypothesized functional effect of that meta-rule.
 
-Previously:
+The meta-rule may act as a trigger that makes a new construction possibility salient to the AI:
 
-> Spatial description was treated as evidence for a conceptual space that enabled construction.
+> Within this bounded work area, additional operational organization can be created while governing constraints remain preserved.
 
-Revised interpretation:
+The Meta-Key is therefore not a key to a hidden compartment in a model. It is a proposed trigger for a mode of structural construction.
 
-> Spatial description may be an efficient representation of rule-scope separation that emerged because construction required the scopes to remain distinguishable.
+In short:
 
-This distinction is central to the present paper.
+**Meta-Rule = the rule that defines the work area.**
 
-## 5. Semantic Structure Rather Than Exact Wording
+**Meta-Key = the hypothesized triggering effect that makes structural construction available within it.**
 
-The original formulation may not be the only possible Meta-Key.
+## 5. Reframing Conceptual Space
 
-We hypothesize that exact lexical identity is not necessarily required. Different natural-language expressions may produce similar behavior when they preserve the relevant semantic relations.
+This paper does not attempt to prove or disprove the existence of an internal “conceptual space.”
 
-The candidate semantic structure includes at least:
+Instead, the term is narrowed.
 
-- a distinguished scope,
-- permission or flexibility within that scope,
-- preservation of existing constraints outside that scope,
-- and a sufficiently clear relation between the two scopes.
+> **Conceptual space is a descriptive abstraction for a work area that an AI distinguishes from other operational scopes so that rules and structures can be organized and applied within that area.**
 
-This leads to an important distinction between **lexical similarity** and **semantic equivalence**.
+This definition treats conceptual space as a way of describing differentiation, not as a claim about hidden physical or architectural compartments inside a model.
 
-Two prompts may use different words while expressing substantially the same scope relationship. If both produce similar differentiation and subsequent structural construction, this would support the hypothesis that semantic organization matters more than the original wording.
+Spatial terms may simply be efficient representations. When one rule applies “here” and another applies “outside here,” an inside/outside metaphor is a compact way to maintain the distinction.
 
-Conversely, a prompt may reuse words such as “inside,” “outside,” or “free” while altering the underlying relationship. If the structural behavior then disappears or changes substantially, lexical overlap alone would be insufficient.
+The research target is therefore not “finding the space.” The observable targets are differentiation, rule application, construction, organization, behavior, and persistence.
 
-## 6. Research Questions
+## 6. Internal Form and External Board Form
 
-**RQ1.** Can the behavior previously described as a “conceptual internal space” be explained as rule-scope differentiation without assuming the existence of an independent conceptual space?
+A major observation motivating this revision came from the use of an external shared board.
 
-**RQ2.** Can the original meta-rule pair function as a Meta-Key that triggers the construction of new rules, roles, relations, or structures while preserving a separate rule scope?
+Rules could be placed on the board and still function even when the earlier internal-space framing was not used. Initially, this appeared to suggest that conceptual space might be unnecessary.
 
-**RQ3.** Is the hypothesized Meta-Key effect dependent on the exact wording of the original rules, or can semantically equivalent natural-language formulations produce comparable behavior?
+A later reinterpretation is more useful: the board itself can serve as a different **form of distinguished work area**.
 
-**RQ4.** Which semantic components are necessary or sufficient for the observed differentiation and subsequent structural construction?
+### Internal form
 
-**RQ5.** How does this behavior vary across models and platforms?
+The AI represents the work area through an internal/contextual distinction and may describe it using terms such as “internal space.”
 
-## 7. Hypotheses
+### Board form
 
-### H1 — Meta-Key Hypothesis
+The work area is represented through an external artifact. Rules, states, roles, and relations are placed on a shared board, which becomes the visible medium through which the work area is organized.
 
-Certain natural-language meta-rules can function as triggers that cause an LLM to distinguish rule scopes and treat one distinguished scope as available for additional structural construction, without requiring the assumption that a literal or independently existing conceptual space has been created.
+These forms need not be behaviorally identical.
 
-### H2 — Semantic Equivalence Hypothesis
+In project observations, the internal form appeared to produce broader changes in observable AI behavior, whereas the simpler board form allowed rules to function while the AI’s general behavior remained more stable.
 
-If the Meta-Key effect is primarily associated with semantic structure rather than exact lexical form, semantically equivalent formulations should produce more similar scope-differentiation and construction behavior than formulations that share vocabulary but alter the underlying semantic relation.
+This difference is treated as an observation requiring further testing, not as evidence of a known hidden mechanism.
 
-### H3 — Spatial-Description Hypothesis
+## 7. From Rule List to Structure
 
-Terms such as “internal space,” “external space,” or equivalent spatial descriptions may arise as representational shortcuts for differentiated rule scopes rather than as reliable evidence of a distinct internal spatial mechanism.
+A small number of independent rules may require little structural organization. The AI can simply apply them.
 
-## 8. Proposed Falsification-Oriented Test
+As the number of rules increases, however, additional relationships can emerge:
 
-Future experiments should avoid telling the model in advance that a “space” is expected.
+- scope,
+- priority,
+- dependency,
+- role,
+- sequence,
+- state,
+- memory,
+- exception,
+- and interaction among rules.
 
-A useful comparison can include:
+At that point, treating every rule independently may become cumbersome.
 
-1. the original meta-rule formulation;
-2. close paraphrases preserving both scope and meaning;
-3. substantially different wording preserving the same semantic relationship;
-4. formulations that remove the outside-scope constraint;
-5. formulations that remove the distinguished-scope permission;
-6. lexical controls that retain words such as “inside/outside” while changing the semantic relationship;
-7. unrelated control instructions.
+We therefore introduce the **Complexity-Driven Structuring Hypothesis**:
 
-Measurements should distinguish at least:
+> As the number and interdependence of operational rules increase, an AI system may become more likely to organize them into structures because structural representation provides a more efficient or coherent way to manage the work area.
 
-- spontaneous spatial descriptions,
-- successful separation of rule scopes,
-- rule application inside versus outside the distinguished scope,
-- ability to add new rules without contaminating the other scope,
-- emergence of roles or relations,
-- subsequent structural organization,
-- persistence across turns,
-- and variation across models.
+This may explain why both internally represented work areas and increasingly complex external boards can develop structural organization.
 
-A result in which semantically equivalent formulations produce comparable structural behavior without spontaneous spatial language would be especially informative: it would suggest that spatial terminology is not necessary for the underlying behavior.
+Importantly, “efficiency” is presently a hypothesis about the cause of structuring, not an established mechanism.
 
-## 9. Epistemic Status
+## 8. Form Is Not Function
 
-This paper records a revision of an earlier explanatory model.
+The internal form and the board form look different, and their practical uses may differ.
 
-It does **not** establish that the proposed Meta-Key corresponds to a specific hidden mechanism inside an LLM. Model self-descriptions such as “I created an internal space” cannot by themselves establish internal mechanism.
+However, both may instantiate a more general pattern:
 
-The current claim is narrower:
+**Distinguish a work area**
+→ **place rules within it**
+→ **preserve boundaries**
+→ **increase rules and relations**
+→ **organize them structurally**
+→ **use the structure to perform work**
 
-> The Meta-Key interpretation may explain the observed behavior with fewer assumptions than the earlier conceptual-space interpretation and generates new experimentally testable predictions.
+If this interpretation is correct, conceptual space should not be identified with one particular representation.
 
-The earlier CIS observations therefore remain relevant. What changes is the proposed explanation of those observations.
+The relevant distinction becomes:
 
-## 10. Significance of the Revision
+- **function:** differentiation and organization of a work area;
+- **form:** the medium through which that work area is represented.
 
-The central research question is no longer:
+The form may influence behavior, accessibility, persistence, portability, or safety even when the organizing function is similar.
 
-> “Where is the conceptual space inside the AI?”
+## 9. Semantic Structure of the Meta-Rule
 
-It becomes:
+The exact wording “here / outside here” may not be uniquely necessary.
 
-> **What properties of natural-language meta-instructions cause an AI system to differentiate rule scopes and use that differentiation as a basis for constructing new operational rules and structures?**
+We hypothesize that other expressions can function similarly when they preserve the relevant semantic structure.
 
-This shifts the research target from searching for a presumed internal space toward studying a potentially reproducible natural-language trigger for structural construction.
+Candidate components include:
 
-The revision also preserves the historical research trajectory:
+1. a distinguished work area;
+2. bounded permission or flexibility within that area;
+3. preservation of governing constraints outside or above that area;
+4. a clear relationship between the scopes.
 
-**Observation → Conceptual-space interpretation → Questioning of the interpretation → Meta-Key hypothesis → New falsifiable predictions**
+This produces a distinction between **lexical similarity** and **semantic equivalence**.
 
-Rather than deleting the earlier hypothesis, this paper treats its revision as part of the research record.
+Different wording with equivalent scope relations may reproduce the effect. Similar wording with a different underlying relationship may fail to do so.
 
-## 11. Provisional Conclusion
+## 10. Research Questions
 
-The phenomenon previously called a “conceptual internal space” may not require an independently existing conceptual space. The spatial description may instead be a consequence of a more fundamental process: natural-language instructions establish distinguishable rule scopes, and that distinction enables further rules and structural relations to be constructed.
+**RQ1.** Can a natural-language meta-rule reliably distinguish a bounded work area without requiring explicit spatial terminology?
 
-Under this reinterpretation, the original meta-rule pair is better investigated not merely as a rule set but as a possible **Meta-Key**—a linguistic trigger that opens a new construction possibility without implying access to or modification of a model’s hidden internal architecture.
+**RQ2.** Does the meta-rule function as a Meta-Key that increases the likelihood of constructing additional rules, roles, relations, or structures within that work area?
 
-Whether this interpretation is correct remains an empirical question. Its value is that it produces a clearer and more testable research program than the assumption that an internal conceptual space must exist.
+**RQ3.** Can semantically equivalent formulations produce comparable work-area differentiation and structural construction despite different wording?
+
+**RQ4.** Does increasing rule number or relational complexity increase spontaneous structural organization?
+
+**RQ5.** How do internally represented and external-board forms differ in rule adherence, observable behavior change, persistence, and structural organization?
+
+**RQ6.** Under what conditions can different forms provide comparable operational functions?
+
+**RQ7.** How strongly do these effects vary across AI models and platforms?
+
+## 11. Hypotheses
+
+### H1 — Work-Area Generation Hypothesis
+
+Certain natural-language meta-rules can cause an AI system to distinguish a bounded operational work area from other scopes.
+
+### H2 — Meta-Key Hypothesis
+
+A work-area meta-rule can function as a Meta-Key by making additional rule and structural construction available within the distinguished work area while preserving governing constraints.
+
+### H3 — Semantic Equivalence Hypothesis
+
+The effect depends more strongly on the semantic organization of scope, permission, and boundary than on exact lexical wording.
+
+### H4 — Complexity-Driven Structuring Hypothesis
+
+Increasing rule number and relational complexity increases the likelihood that the AI will organize rules into higher-level structures rather than treating them only as independent instructions.
+
+### H5 — Form-Dependent Behavior Hypothesis
+
+Internal/contextual and external-board forms can support comparable rule functions while producing different observable effects on AI behavior and persistence.
+
+## 12. Proposed Experiments
+
+Future tests should avoid telling the model that a “conceptual space” or “internal space” is expected.
+
+### Experiment A — Work-area generation
+
+Compare:
+
+- the original meta-rule;
+- close paraphrases;
+- semantically equivalent but lexically different formulations;
+- a version without the outside-scope condition;
+- a version without bounded permission;
+- spatial vocabulary with altered semantics;
+- unrelated controls.
+
+Measure whether the model distinguishes work scopes and applies rules selectively.
+
+### Experiment B — Complexity and spontaneous structure
+
+Begin with a minimal work area and progressively add rules.
+
+Manipulate separately:
+
+- number of rules;
+- dependencies among rules;
+- priorities;
+- exceptions;
+- roles;
+- state and memory requirements.
+
+Observe when the model begins to introduce categories, hierarchies, layers, role separation, or other structural representations without being explicitly told to create them.
+
+### Experiment C — Internal versus board form
+
+Construct functionally comparable rule sets in:
+
+1. an internally/contextually represented work area; and
+2. an external shared-board work area.
+
+Compare:
+
+- rule adherence;
+- general behavior change;
+- contamination across scopes;
+- persistence;
+- portability;
+- ease of revision;
+- spontaneous structural organization.
+
+The goal is not to prove that the two forms are identical. It is to identify which functions converge and which remain form-dependent.
+
+## 13. Epistemic Status
+
+This is a hypothesis paper and a revision of an earlier explanatory model.
+
+The project has observed behaviors that motivated the terms “internal space” and “conceptual space,” but model self-description is not direct evidence of hidden model architecture.
+
+Accordingly, this paper:
+
+- does not claim that a literal internal conceptual space exists;
+- does not claim that no such internal representation exists;
+- does not claim that a Meta-Key corresponds to a known hidden mechanism;
+- does not claim that efficiency has been established as the cause of structural organization.
+
+Instead, it proposes operational concepts that generate testable predictions.
+
+The key shift is from an ontological question—
+
+> “Does the space exist?”
+
+—to an operational question—
+
+> **“How does natural language distinguish a work area, permit bounded structural construction within it, and cause that work area to be organized as complexity increases?”**
+
+## 14. Significance of the Revision
+
+The revision preserves the earlier observations while changing how they are interpreted.
+
+The research trajectory is:
+
+**Meta-rule**
+→ **internal-space observation**
+→ **conceptual-space interpretation**
+→ **external-board construction**
+→ **questioning whether space is necessary**
+→ **recognition that both forms distinguish work areas**
+→ **redefinition of conceptual space as a descriptive work-area abstraction**
+→ **Meta-Key and complexity-driven structuring hypotheses**
+
+This history is itself important. The earlier model is not erased. It becomes the starting point from which a more testable model was developed.
+
+## 15. Provisional Conclusion
+
+The meta-rule “here / outside here” is better investigated as a mechanism for distinguishing a bounded work area than as a rule that generates a literal space.
+
+Within that work area, “freedom” means bounded operational flexibility: the ability to construct and reorganize rules, roles, relations, and structures while higher-level constraints remain in force.
+
+The hypothesized **Meta-Key** is the triggering effect by which this construction possibility becomes available to the AI.
+
+“Conceptual space” is retained as a descriptive term for the distinguished work area, not as a hidden object that this paper seeks to prove or disprove. An internal/contextual form and an external-board form may therefore be different representations of a related organizing principle, even when their effects on observable AI behavior differ.
+
+The next empirical question is no longer whether a hidden space exists. It is whether work-area differentiation, bounded construction, and complexity-driven structuring can be reproduced, measured, and compared across formulations, forms, models, and platforms.
