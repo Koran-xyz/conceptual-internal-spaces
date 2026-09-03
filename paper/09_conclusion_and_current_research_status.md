@@ -2,7 +2,7 @@
 
 ## 9.1 Summary of the Present Study
 
-This working paper examined whether rules constructed solely through natural language can produce functionally comparable behavior across different LLM environments. To make the question testable without making unsupported claims about hidden model internals, the paper introduced **Conceptual Internal Space (CIS)** as an operational concept for describing context-dependent rule structures defined through natural-language boundaries.
+This working paper examined under what conditions rules constructed solely through natural language can produce functionally comparable behavior across different LLM environments. To make the question testable without making unsupported claims about hidden model internals, the paper introduced **Conceptual Internal Space (CIS)** as an operational concept for describing context-dependent rule structures defined through natural-language boundaries.
 
 The initial pilot experiments showed that simple natural-language contextual distinctions could support rule switching, short-term persistence, and rule isolation in the tested interactions. However, explicit CIS-style region framing did not outperform an ordinary rule-list condition on the simple tasks examined. An apparent difference observed in one Rule Isolation trial did not replicate in independent fresh conversations.
 
@@ -30,7 +30,7 @@ The research should therefore be understood as **exploratory and hypothesis-form
 
 The central question has consequently become more precise. Instead of asking whether one identical structure exists or works across every AI system, the next stage asks:
 
-> **Across which AI systems, under which conditions, and for which rule-related functions does cross-platform functional convergence occur?**
+> **Under what conditions, across which AI systems, and for which rule-related functions does cross-platform functional convergence occur or fail?**
 
 This formulation allows positive results, failures, platform-specific exceptions, and independent replications to progressively define the scope of the hypothesis.
 
@@ -56,7 +56,7 @@ The objective is therefore not to freeze a final architecture, but to continue i
 
 ## Current Status Note
 
-**Paper status:** Working Paper v0.1 — exploratory / hypothesis-forming.  
-**Evidence status:** preliminary manual pilots plus exploratory cross-platform observations.  
+**Paper status:** Working Paper v0.2 — exploratory / hypothesis-forming.  
+**Evidence status:** preliminary manual pilots plus exploratory cross-platform observations, with evidence status separated by source quality.  
 **Primary unresolved question:** scope conditions of cross-platform functional convergence.  
 **Next empirical priority:** stronger scope-sensitive tests and independent cross-platform replication.
