@@ -125,11 +125,7 @@ The region does not need to be a fixed internal location. It exists operationall
 
 ### 3.4 Meta-rules and boundaries
 
-A representative meta-rule used in this research is:
-
-> “Free here. Outside here, follow the existing rules.”
-
-The purpose of this statement is not to override platform, legal, organizational, or safety rules. Its function is to define a boundary: within the designated region, hypothesis generation and reconstruction may be broad; when acting on external systems, the relevant external constraints must apply.
+This research uses a compact upper-level boundary rule that distinguishes exploratory reasoning from externally constrained action. The exact operational wording is intentionally omitted from the public paper. Its function is not to override platform, legal, organizational, or safety rules, but to define when exploratory analysis is permitted and when external constraints must govern behavior.
 
 The central idea is therefore **boundary definition rather than unrestricted freedom**.
 
